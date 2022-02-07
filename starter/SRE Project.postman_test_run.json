@@ -1,0 +1,215 @@
+{
+	"id": "62da02ef-73c8-4c5f-8d31-0df4a775610b",
+	"name": "SRE Project",
+	"timestamp": "2022-02-07T11:58:17.018Z",
+	"collection_id": "8102430-7c90ff1f-1cb1-4ed9-8a13-612dab26bd13",
+	"folder_id": 0,
+	"environment_id": "aa04aa29-f948-4fc3-9ed4-9d2f7d46d913",
+	"totalPass": 12,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "ee7e56ec-d0dd-4995-a72d-71eb839125f9",
+			"name": "Initialize the Database",
+			"url": "http://3.139.83.193/init",
+			"time": 640,
+			"responseCode": {
+				"code": 201,
+				"name": "CREATED"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Success check": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Success check": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				640
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Success check": true
+				}
+			]
+		},
+		{
+			"id": "f0dc0c7a-fe3f-4f3e-a12b-deecc645ee21",
+			"name": "Register a User",
+			"url": "http://3.139.83.193/auth/register",
+			"time": 235,
+			"responseCode": {
+				"code": 201,
+				"name": "CREATED"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Success check": true,
+				"Set Token": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Success check": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Set Token": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				235
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Success check": true,
+					"Set Token": true
+				}
+			]
+		},
+		{
+			"id": "40085982-6e4f-4a5a-a9ab-4a5c99f54e8c",
+			"name": "Create Event",
+			"url": "http://3.139.83.193/events/",
+			"time": 256,
+			"responseCode": {
+				"code": 201,
+				"name": "CREATED"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Success check": true,
+				"Set EventId": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Success check": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Set EventId": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				256
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Success check": true,
+					"Set EventId": true
+				}
+			]
+		},
+		{
+			"id": "0c7ebce5-13ee-4b27-95f8-c9e16451bcb2",
+			"name": "Get All Events",
+			"url": "http://3.139.83.193/events",
+			"time": 213,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Success check": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Success check": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				213
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Success check": true
+				}
+			]
+		},
+		{
+			"id": "9cfb3df2-3b27-4d82-ba04-1f7d7f1dbb45",
+			"name": "Get Event by Id",
+			"url": "http://3.139.83.193/events/5",
+			"time": 212,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Success check": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Success check": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				212
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Success check": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1556,
+	"collection": {
+		"requests": [
+			{
+				"id": "ee7e56ec-d0dd-4995-a72d-71eb839125f9",
+				"method": "POST"
+			},
+			{
+				"id": "f0dc0c7a-fe3f-4f3e-a12b-deecc645ee21",
+				"method": "POST"
+			},
+			{
+				"id": "40085982-6e4f-4a5a-a9ab-4a5c99f54e8c",
+				"method": "POST"
+			},
+			{
+				"id": "0c7ebce5-13ee-4b27-95f8-c9e16451bcb2",
+				"method": "GET"
+			},
+			{
+				"id": "9cfb3df2-3b27-4d82-ba04-1f7d7f1dbb45",
+				"method": "GET"
+			}
+		]
+	}
+}

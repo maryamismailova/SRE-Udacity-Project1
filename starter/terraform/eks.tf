@@ -20,3 +20,13 @@ provider "kubernetes" {
    private_subnet_ids = module.vpc.private_subnet_ids
    vpc_id             = module.vpc.vpc_id
  }
+
+ resource "kubernetes_namespace" "monitoring" {
+  metadata {
+    labels = {
+      env = "monitoring"
+    }
+
+    name = "monitoring"
+  }
+}

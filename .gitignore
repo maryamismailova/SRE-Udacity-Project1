@@ -1,0 +1,4 @@
+**/*.tfvars
+**/.terraform/
+**/inventory/hosts.*
+**/.terraform*

@@ -1,0 +1,2 @@
+[ec2]
+ec2_test ansible_host=3.139.83.193  ansible_user=ubuntu ansible_ssh_private_key_file=/mnt/d/dev/SRE/Lesson1/Project/tokens/udacity
